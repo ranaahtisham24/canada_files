@@ -1,5 +1,14 @@
+import { Button, Stack, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import Image from 'next/image'
+import HomepageHeader from '../components/Header/HomepageHeader/HomepageHeader.jsx'
+import Banner from '../components/Homepage/Banner/Banner.jsx'
+import CountryNews from '../components/Homepage/components/CountryNews.jsx'
+import Cards from '../components/Homepage/components/Cards.jsx'
+import LatestPost from '../components/Homepage/components/LatestPost.jsx'
+import Newsletter from '../components/Homepage/components/Newsletter.jsx'
+import PostHeader from '../components/Homepage/components/PostHeader.jsx'
+import Supporter from '../components/Homepage/components/Supporter.jsx'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -11,7 +20,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <Stack width={'100%'}>
+        <Banner/>
+        <HomepageHeader/>
+        <PostHeader/>
+        <Stack width={'100%'} height={'100%'} backgroundColor={'#F4F6F7'} px={24} py={14} marginTop={'0 !important'} spacing={8}>
+            <LatestPost/>
+            <Stack direction={'row'} justifyContent={'space-between'} width={'100%'} height={'490px'} py={10}>
+              <Cards/>
+              <Cards/>
+              <Cards/>
+            </Stack>
+            <CountryNews/>
+            <CountryNews section={'Africa'}/>
+            <Supporter/>
+            <CountryNews section={'Asia'}/>
+            <CountryNews section={'Middle East'}/>
+            <CountryNews section={'North America'}/>
+            <CountryNews section={'Latin America'}/>
+            <CountryNews section={'Europe'}/>
+        </Stack>
+        <Newsletter/>
+      </Stack>
+
+      {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -50,9 +82,9 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </main> */}
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -63,7 +95,7 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }

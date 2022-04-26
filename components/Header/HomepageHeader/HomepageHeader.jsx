@@ -13,14 +13,16 @@ const HomepageHeader = () => {
       marginTop={"0px !important"}
       px={8}
       fontFamily={'Inter'}
+      justifyContent={'space-between'}
+      display={{base: 'none', md: 'none', lg: 'flex', xl: 'flex'}}
     >
       <Stack
-        width={"50%"}
         direction={"row"}
         justifyContent={"space-between"}
         alignItems={"center"}
         height={"100%"}
-        px={16}
+        pl={16}
+        spacing={{lg: 3,xl:8}}
       >
         <Heading color={"#F4F6F7"} fontFamily={'Open Sans'} fontSize={"22px"}>
           THE CANADA FILES
@@ -54,11 +56,10 @@ const HomepageHeader = () => {
         
       </Stack>
       <Stack
-        width={"50%"}
         direction={"row"}
         justifyContent={"flex-end"}
-        px={16}
-        spacing={6}
+        pr={16}
+        spacing={{lg: 3,xl:8}}
       >
         <Stack justifyContent={"center"} alignItems={"center"}>
           <FontAwesomeIcon fontSize={'24px'} color="white" icon={faMagnifyingGlass} />

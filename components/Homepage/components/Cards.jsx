@@ -1,17 +1,12 @@
-import { Badge, Box, Stack, Text } from "@chakra-ui/react";
-import React,{ useEffect } from "react";
+import { Box, Stack, Text } from "@chakra-ui/react";
+import React from "react";
 import Image from "next/image";
 import Card1 from "../../../public/assets/images/Card1.png";
 
 const Cards = () => {
   const date = new Date().toLocaleString('en-us',{month:'short', day: 'numeric', year:'numeric'});
-  // const currentDate = date.toJSON()
   console.log(date)
 
-  // useEffect(()=>{
-
-    
-  // })
   
   const property = {
     imageUrl: Card1,
@@ -20,9 +15,6 @@ const Cards = () => {
     newsDate: date,
   };
   
-  // useEffect(()=>{
-    
-  // },[property])
   return (
     <Stack height={'100%'}>
       <Box maxW="372px" borderWidth="1px" borderRadius="4px" overflow="hidden" minHeight={"470px"} bgColor={'#FFFFFF'} boxShadow={'0px 40px 30px rgba(163, 179, 194, 0.08), 0px 25px 20px rgba(163, 179, 194, 0.06), 0px 10px 8px rgba(163, 179, 194, 0.05)'}>

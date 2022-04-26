@@ -11,6 +11,7 @@ const PostHeader = () => {
     marginTop={"0px !important"}
     px={8}
     fontFamily={'Inter'}
+    display={{md: 'none', lg: 'flex', xl:'flex'}}
     >
         <Stack
         width={"100%"}
@@ -19,7 +20,7 @@ const PostHeader = () => {
         alignItems={"center"}
         height={"100%"}
         px={16}
-        spacing={8}
+        spacing={{lg: 6,xl:8}}
       >
         <Button
           color={"#121212"}

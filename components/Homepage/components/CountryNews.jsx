@@ -9,7 +9,7 @@ const CountryNews = ({section}) => {
         <Stack direction={'row'} justifyContent={'space-between'} width={'100%'} height={'490px'}>
               <Cards/>
               <Cards/>
-              <Cards/>
+              {/* <Cards/> */}
             </Stack>
         <Text fontFamily={'Inter'} fontSize={'20px'} fontWeight={'700'} marginTop={'0 !important'} color={'#CE1126'}>View All {section ? section : 'Canada'}</Text>
     </Stack>

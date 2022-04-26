@@ -9,8 +9,8 @@ import LinkedIn from '../../public/assets/images/linkedin.svg'
 const Footer = () => {
   return (
     <Stack direction={'column'} color={'#F4F6F7'}>
-      <Stack direction={'row'} alignItems={'flex-start'} width={'100%'} bgColor={'#161B1D'} px={24} py={20}>
-          <Stack direction={'column'} width={'50%'} alignItems={''} spacing={6} pr={16}>
+      <Stack direction={{md: 'column',lg:'row'}} alignItems={'flex-start'} width={'100%'} bgColor={'#161B1D'} px={{md: 12,lg: 24,xl:24}} py={{md: 12,lg:20}} spacing={{md: 12}}>
+          <Stack direction={'column'} width={{md: '100%',lg:'50%'}} alignItems={''} spacing={6} pr={16}>
             <Heading fontSize={'24px'}>THE CANADA FILES</Heading>
             <Text letterSpacing={'-0.011em'}>Anti-imperialist journalism challenging the Canadian empire. Investigative reporting on Canadian foreign policy you won&apost get anywhere else.</Text>
             <Stack direction={'row'} pt={'8'} pl={2} spacing={6}>
@@ -29,15 +29,15 @@ const Footer = () => {
             </Stack>
           </Stack>
 
-          <Stack direction={'row'} width={'50%'} justifyContent={'flex-start'}>
-            <Stack direction={'column'} width={'50%'} spacing={4}>
+          <Stack direction={'row'} width={{md: '100%',lg:'50%'}} justifyContent={'flex-start'} spacing={{md: 40, lg: 0}}>
+            <Stack direction={'column'} width={{md: 'auto',lg:'50%'}} spacing={4}>
               <Heading fontSize={'20px'}>About</Heading>
               <Heading fontSize={'20px'}>Contact</Heading>
               <Heading fontSize={'20px'}>French</Heading>
               <Heading fontSize={'20px'}>Subscribe</Heading>
               <Heading fontSize={'20px'}>Donate</Heading>
             </Stack>
-            <Stack direction={'column'} width={'50%'}>
+            <Stack direction={'column'} width={{md: 'auto',lg:'50%'}}>
               <Heading fontSize={'20px'}>News</Heading>
               <Text>Canada</Text>
               <Text>Africa</Text>
@@ -49,7 +49,7 @@ const Footer = () => {
             </Stack>
           </Stack>
       </Stack>
-      <Stack direction={'row'} fontFamily={'Inter'} fontWeight={'500'} justifyContent={'space-between'} color={'#F4F6F7'} px={24} py={5} bgColor={'#121212'} marginTop={'0 !important'}>
+      <Stack direction={{md: 'column-reverse',lg:'row'}} fontFamily={'Inter'} fontWeight={'500'} justifyContent={'space-between'} color={'#F4F6F7'} px={{md: 12,lg:24}} py={5} bgColor={'#121212'} marginTop={'0 !important'}>
           <Text fontSize={'14px'}>Web design by Wildfern.io</Text>
           <Text fontSize={'12px'}>Copyright The Canada Files © 2022. All rights reserved.</Text>
       </Stack>

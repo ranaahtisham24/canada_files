@@ -28,7 +28,7 @@ const Banner = () => {
         <Text color={'#F4F6F7'} sx={{fontFamily: 'Merriweather !important'}} fontWeight={'700'} fontSize={{md: '20px', lg: '22px' , xl:'26px'}} lineHeight={'130%'} fontStyle={'italic'} fontFamily={'sans-serif'}> 
           Anti-imperialist journalism challenging the Canadian empire
         </Text>
-        <Text fontSize={{md: '14px',lg: '16px' , xl:'18px'}} color={'#F4F6F7'} fontWeight={'light'} sx={{fontFamily: 'Inter', marginLeft: '16px !important'}} lineHeight={'140%'}>Investigative reporting on Canadian foreign policy you won't get anywhere else</Text>
+        <Text fontSize={{md: '14px',lg: '16px' , xl:'18px'}} color={'#F4F6F7'} fontWeight={'light'} sx={{fontFamily: 'Inter', marginLeft: '16px !important'}} lineHeight={'140%'}>Investigative reporting on Canadian foreign policy you wont get anywhere else</Text>
       </Stack>
     </Stack>
   );

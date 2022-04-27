@@ -28,20 +28,20 @@ export default function Home() {
         <Banner/>
         <HomepageHeader/>
         <PostHeader/>
-        <Stack width={'100%'} height={'100%'} backgroundColor={'#F4F6F7'} px={{md: 10,lg: 24,xl:24}} py={14} marginTop={'0 !important'} spacing={8}>
+        <Stack width={'100%'} height={'100%'} backgroundColor={'#F4F6F7'} justifyContent={'center'} alignItems={'center'} px={{base: 6,md: 10,lg: 24,xl:24}} py={14} marginTop={'0 !important'} spacing={8}>
             <LatestPost/>
-            <Stack direction={'row'} display={{base: 'none',md: 'none',lg: 'flex', xl: 'flex'}} justifyContent={'space-between'} width={'100%'} height={'490px'} py={10}>
+            <Stack direction={'row'} display={{base: 'none',md: 'none',lg: 'flex', xl: 'flex'}} justifyContent={{base: 'center',md:'space-between', lg: 'space-between', xl: 'space-between'}} width={'100%'} height={'490px'} py={10}>
               <Cards/>
               <Cards/>
               <Cards/>
             </Stack>
             
-            <Stack direction={'row'} display={{sm: 'none',md: 'flex',lg: 'none', xl: 'none'}} justifyContent={'space-between'} width={'100%'} height={'490px'} py={10}>
+            <Stack direction={'row'} display={{base: 'none',md: 'flex',lg: 'none', xl: 'none'}} justifyContent={'space-between'} width={'100%'} height={'490px'} py={10}>
               <Cards/>
               <Cards/>
             </Stack>
 
-            <Stack direction={'row'} display={{sm: 'flex',md: 'none',lg: 'none', xl: 'none'}} justifyContent={'space-between'} width={'100%'} height={'490px'} py={10}>
+            <Stack direction={'row'} display={{base: 'flex',md: 'none',lg: 'none', xl: 'none'}} justifyContent={'space-between'} width={'100%'} height={'490px'} py={10}>
               <Cards/>
             </Stack>
 

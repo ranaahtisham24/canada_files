@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const LatestPost = () => {
   return (
-    <Stack width={'100%'} backgroundColor={'#FFFFFF'} direction={{md: 'column',lg:'row'}} borderRadius={'4px'}>
+    <Stack width={'100%'} backgroundColor={'#FFFFFF'} direction={{base: 'column',md: 'column',lg:'row', xl: 'row'}} borderRadius={'4px'}>
         <Stack width={{md: '100%',lg:'62%'}} height={"100%"}>
             <Box width={'100%'} height={'100%'}>
             <Image objectFit="contain" alt='pic' src={LatestImg}/>

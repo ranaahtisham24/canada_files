@@ -11,7 +11,7 @@ const PostHeader = () => {
     marginTop={"0px !important"}
     px={8}
     fontFamily={'Inter'}
-    display={{md: 'none', lg: 'flex', xl:'flex'}}
+    display={{base: 'none',md: 'none', lg: 'flex', xl:'flex'}}
     >
         <Stack
         width={"100%"}

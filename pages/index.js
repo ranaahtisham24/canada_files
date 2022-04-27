@@ -30,19 +30,40 @@ export default function Home() {
         <PostHeader/>
         <Stack width={'100%'} height={'100%'} backgroundColor={'#F4F6F7'} justifyContent={'center'} alignItems={'center'} px={{base: 6,md: 10,lg: 24,xl:24}} py={14} marginTop={'0 !important'} spacing={8}>
             <LatestPost/>
-            <Stack direction={'row'} display={{base: 'none',md: 'none',lg: 'flex', xl: 'flex'}} justifyContent={{base: 'center',md:'space-between', lg: 'space-between', xl: 'space-between'}} width={'100%'} height={'490px'} py={10}>
+            <Stack direction={{base: 'column',md:'row'}} display={{base: 'flex',md: 'none',lg: 'flex', xl: 'flex'}} justifyContent={'center'} width={'100%'} py={10} spacing={{base: 10, lg:0}}>
+              <Stack direction={{base: 'column',md:'row'}} spacing={{base: 6, xl: 12}}>
               <Cards/>
               <Cards/>
               <Cards/>
+              </Stack>
+
+              <Stack direction={{base: 'column',md:'row'}} marginTop={'0px !important'} spacing={{base: 6, xl: 12}}>
+              <Cards/>
+              <Cards/>
+              <Cards/>
+              </Stack>
             </Stack>
             
-            <Stack direction={'row'} display={{base: 'none',md: 'flex',lg: 'none', xl: 'none'}} justifyContent={'space-between'} width={'100%'} height={'490px'} py={10}>
+            {/* <Stack direction={'row'} display={{base: 'none',md: 'flex',lg: 'none', xl: 'none'}} justifyContent={'center'} width={'100%'} py={10} spacing={6}>
               <Cards/>
               <Cards/>
-            </Stack>
+            </Stack> */}
 
-            <Stack direction={'row'} display={{base: 'flex',md: 'none',lg: 'none', xl: 'none'}} justifyContent={'space-between'} width={'100%'} height={'490px'} py={10}>
+            <Stack direction={'column'} display={{base: 'none',md: 'flex',lg: 'none'}} justifyContent={'center'} width={'100%'} py={10} spacing={10}>
+              <Stack direction={'row'} spacing={6}>
               <Cards/>
+              <Cards/>
+              </Stack>
+
+              <Stack direction={'row'} spacing={6}>
+              <Cards/>
+              <Cards/>
+              </Stack>
+
+              <Stack direction={'row'} spacing={6}>
+              <Cards/>
+              <Cards/>
+              </Stack>
             </Stack>
 
             <CountryNews/>

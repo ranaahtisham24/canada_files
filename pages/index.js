@@ -1,7 +1,7 @@
 import { Button, Stack, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import Image from 'next/image'
-import HomepageHeader from '../components/Header/HomepageHeader/HomepageHeader.jsx'
+// import HomepageHeader from '../components/Header/HomepageHeader/HomepageHeader.jsx'
 import Banner from '../components/Homepage/Banner/Banner.jsx'
 import CountryNews from '../components/Homepage/components/CountryNews.jsx'
 import Cards from '../components/Homepage/components/Cards.jsx'
@@ -11,6 +11,7 @@ import PostHeader from '../components/Homepage/components/PostHeader.jsx'
 import Supporter from '../components/Homepage/components/Supporter.jsx'
 import styles from '../styles/Home.module.css'
 import MobileHeader from '../components/Header/MobileHeader/MobileHeader.jsx'
+import Header from '../components/Header/Header.js'
 
 export default function Home() {
   return (
@@ -26,11 +27,12 @@ export default function Home() {
           <MobileHeader/>
         </Stack>
         <Banner/>
-        <HomepageHeader/>
+        {/* <HomepageHeader/> */}
+        <Header/>
         <PostHeader/>
         <Stack width={'100%'} height={'100%'} backgroundColor={'#F4F6F7'} justifyContent={'center'} alignItems={'center'} px={{base: 6,md: 10,lg: 24,xl:24}} py={14} marginTop={'0 !important'} spacing={8}>
             <LatestPost/>
-            <Stack direction={{base: 'column',md:'row'}} display={{base: 'flex',md: 'none',lg: 'flex', xl: 'flex'}} justifyContent={'center'} width={'100%'} py={10} spacing={{base: 10, lg:0}}>
+            <Stack direction={{base: 'column',md:'row', lg: 'column'}} display={{base: 'flex',md: 'none',lg: 'flex', xl: 'flex'}} justifyContent={'center'} width={'100%'} py={10} spacing={{base: 10, lg:0}}>
               <Stack direction={{base: 'column',md:'row'}} spacing={{base: 6, xl: 12}}>
               <Cards/>
               <Cards/>

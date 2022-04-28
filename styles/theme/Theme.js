@@ -2,6 +2,7 @@ import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/merriweather";
 import "@fontsource/inter"
 import "@fontsource/open-sans"
+import "charter-webfont"
 
 
 const theme = extendTheme({

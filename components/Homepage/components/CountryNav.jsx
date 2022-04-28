@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Heading, Stack } from "@chakra-ui/react";
 
-const PostHeader = () => {
+const CountryNav = () => {
   return (
     <Stack height={"64px"}
     direction={"row"}
@@ -87,4 +87,4 @@ const PostHeader = () => {
   )
 }
 
-export default PostHeader
+export default CountryNav

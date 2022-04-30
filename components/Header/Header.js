@@ -22,9 +22,9 @@ const Header = () => {
         alignItems={"center"}
         height={"100%"}
         pl={16}
-        spacing={{lg: 3,xl:8}}
+        spacing={{lg: 6,xl:8}}
       >
-        <Heading color={"#F4F6F7"} fontFamily={'Open Sans'} fontSize={"22px"}>
+        <Heading color={"#F4F6F7"} fontFamily={'Open Sans'} fontSize={"22px"} lineHeight={'20px'}>
           THE CANADA FILES
         </Heading>
         <Button

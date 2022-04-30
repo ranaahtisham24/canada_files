@@ -4,12 +4,12 @@ import ShareIcon from "./ShareIcon";
 
 const ArticleDescription = () => {
   return (
-    <Stack spacing={8} direction={"column"} borderBottom={'1px solid #6B7280'} py={8}>
+    <Stack spacing={8} direction={"column"} borderBottom={'1px solid #6B7280'} py={8} pt={{base: 2, md: 6}}>
       <Heading
-        fontSize={"24px"}
+        fontSize={{base: '20px',md: "24px"}}
         fontFamily={"Inter"}
         fontWeight={"600"}
-        lineHeight={"160%"}
+        lineHeight={{base: '140%',md:"160%"}}
         color={"#22224A"}
       >
         One or two sentences will go here that summarize/introduce the article.
@@ -17,7 +17,7 @@ const ArticleDescription = () => {
       </Heading>
 
       <Text
-        fontSize={"20px"}
+        fontSize={{base: '17px',md: "20px"}}
         fontFamily={"Charter"}
         lineHeight={"160%"}
         color={"#22224A"}
@@ -39,9 +39,9 @@ const ArticleDescription = () => {
 
       <Stack spacing={6}>
         <Heading
-          fontSize={"24px"}
+          fontSize={{base: '20px',md: "24px"}}
           fontFamily={"Inter"}
-          fontWeight={"600"}
+          fontWeight={"700"}
           lineHeight={"160%"}
           color={"#22224A"}
         >
@@ -49,7 +49,7 @@ const ArticleDescription = () => {
         </Heading>
 
         <Text
-          fontSize={"20px"}
+          fontSize={{base: '17px',md: "20px"}}
           fontFamily={"Charter"}
           lineHeight={"160%"}
           color={"#22224A"}
@@ -67,9 +67,9 @@ const ArticleDescription = () => {
 
       <Stack spacing={6}>
         <Heading
-          fontSize={"24px"}
+          fontSize={{base: '20px',md: "24px"}}
           fontFamily={"Inter"}
-          fontWeight={"600"}
+          fontWeight={"700"}
           lineHeight={"160%"}
           color={"#22224A"}
         >
@@ -77,7 +77,7 @@ const ArticleDescription = () => {
         </Heading>
 
         <Text
-          fontSize={"20px"}
+          fontSize={{base: '17px',md: "20px"}}
           fontFamily={"Charter"}
           lineHeight={"160%"}
           color={"#22224A"}
@@ -106,7 +106,7 @@ const ArticleDescription = () => {
 
       <Stack spacing={6}>
         <Heading
-          fontSize={"24px"}
+          fontSize={{base: '20px',md: "24px"}}
           fontFamily={"Inter"}
           fontWeight={"600"}
           lineHeight={"160%"}
@@ -116,7 +116,7 @@ const ArticleDescription = () => {
         </Heading>
 
         <Text
-          fontSize={"20px"}
+          fontSize={{base: '17px',md: "20px"}}
           fontFamily={"Charter"}
           lineHeight={"160%"}
           color={"#22224A"}

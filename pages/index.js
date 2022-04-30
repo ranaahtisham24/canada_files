@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <Stack width={'100%'}>
-        <Stack display={{sm: 'flex',md: 'flex', lg:'none', xl: 'none'}}>
+        <Stack >
           <MobileHeader/>
         </Stack>
         <Banner/>

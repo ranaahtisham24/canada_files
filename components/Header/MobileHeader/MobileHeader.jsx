@@ -31,6 +31,8 @@ const MobileHeader = () => {
       backgroundColor={"#CE1126"}
       alignItems={"center"}
       px={4}
+      display={{base: 'flex',md: 'flex', lg:'none', xl: 'none'}}
+      marginTop={'0px !important'}
     >
       <Stack direction={"row"} spacing={6} marginTop={"0px !important"}>
         <FontAwesomeIcon

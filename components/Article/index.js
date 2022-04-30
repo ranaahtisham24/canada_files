@@ -13,13 +13,13 @@ const index = () => {
     <Stack
       direction={"column"}
       width={"100%"}
-      px={{lg: 72,xl: 80 }}
-      py={{lg: 14}}
+      px={{base: 4,md: 6,lg: 56,xl: 80 }}
+      py={{base: 10,md: 12,lg: 14}}
       backgroundColor={"#F4F6F7"}
       marginTop={'0 !important'}
       spacing={6}
     >
-        <Heading fontFamily={'Charter'} fontSize={{lg: '30px',xl:'32px'}} fontWeight={'700'} lineHeight={'140%'} color={'#22224A'}>Why has Nicaragua’s democratic election been attacked by Canada and the USA?</Heading>
+        <Heading fontFamily={'Charter'} fontSize={{base: '26px',lg: '30px',xl:'32px'}} fontWeight={'700'} lineHeight={'140%'} color={'#22224A'}>Why has Nicaragua’s democratic election been attacked by Canada and the USA?</Heading>
         <Stack direction={'row'} width={'100%'} spacing={4}>
             <Link textDecoration={"underline"}>Alison Bodine</Link>
             <Text>March 21, 2022</Text>

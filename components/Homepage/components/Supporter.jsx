@@ -12,7 +12,7 @@ const Supporter = () => {
         <Stack fontFamily={'Inter'} fontSize={{md: '16px',lg: '18px',xl:'20px'}} color={'#273848'} lineHeight={'140%'} px={4} display={{base: 'flex', md: 'none', lg: 'none', xl: 'none'}}>
             <Text lineHeight={'24px'} textAlign={'center'}>Support critical investigation and analysis of foreign policy issues in Canada and around the world.</Text>
         </Stack>
-        <Button fontFamily={'Inter'} fontWeight={'700'} bgColor={'#CE1126'} p={6} color={'#FFFFFF'} width={{base: 'full',md: 'max-content',lg: 'max-content', xl:'max-content'}}>Donate to The Canada Files</Button>
+        <Button fontFamily={'Inter'} fontWeight={'700'} bgColor={'#CE1126'} p={6} color={'#FFFFFF'} width={{base: 'full',md: 'max-content',lg: 'max-content', xl:'max-content'}} _hover={{backgroundColor: 'none'}} _active={{backgroundColor: '#A00D1E'}}>Donate to The Canada Files</Button>
     </Stack>
   )
 }

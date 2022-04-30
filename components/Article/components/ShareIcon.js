@@ -13,6 +13,8 @@ const ShareIcon = () => {
         size={10}
         backgroundColor={"#FFFFFF"}
         border={"1.5px solid #CBD6DC"}
+        _hover={{border: '1.5px solid #6B7280'}}
+        _active={{backgroundColor: '#CBD6DC', borderColor: '#CBD6DC'}}
       >
         <Image
           objectFit="contain"
@@ -26,6 +28,8 @@ const ShareIcon = () => {
         size={10}
         backgroundColor={"#FFFFFF"}
         border={"1.5px solid #CBD6DC"}
+        _hover={{border: '1.5px solid #6B7280'}}
+        _active={{backgroundColor: '#CBD6DC', borderColor: '#CBD6DC'}}
       >
         <Image
           objectFit="contain"
@@ -39,6 +43,8 @@ const ShareIcon = () => {
         size={10}
         backgroundColor={"#FFFFFF"}
         border={"1.5px solid #CBD6DC"}
+        _hover={{border: '1.5px solid #6B7280'}}
+        _active={{backgroundColor: '#CBD6DC', borderColor: '#CBD6DC'}}
       >
         <Image
           objectFit="contain"
@@ -63,6 +69,8 @@ const ShareIcon = () => {
         fontFamily={"Inter"}
         fontWeight={"700"}
         color={"#6B7280"}
+        _hover={{border: '1.5px solid #6B7280'}}
+        _active={{backgroundColor: '#CBD6DC', borderColor: '#CBD6DC'}}
       >
         Copy Link
       </Button>

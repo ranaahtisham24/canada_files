@@ -13,7 +13,7 @@ const index = () => {
     <Stack
       direction={"column"}
       width={"100%"}
-      px={{base: 4,md: 6,lg: 56,xl: 80 }}
+      px={{base: 4,md: 6,lg: 56,xl: '22em', '2xl': '44em' }}
       py={{base: 10,md: 12,lg: 14}}
       backgroundColor={"#F4F6F7"}
       marginTop={'0 !important'}

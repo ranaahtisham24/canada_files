@@ -29,9 +29,9 @@ export default function Home() {
         {/* <HomepageHeader/> */}
         <Header/>
         <CountryNav/>
-        <Stack width={'100%'} height={'100%'} backgroundColor={'#F4F6F7'} justifyContent={'center'} alignItems={'center'} px={{base: 6,md: 10,lg: 24,xl:24 ,'2xl': '24em'}} py={14} marginTop={'0 !important'} spacing={8}>
+        <Stack width={'100%'} height={'100%'} backgroundColor={'#F4F6F7'} justifyContent={'center'} alignItems={'center'} px={{base: 6,md: 8,lg: 24,xl:24 ,'2xl': '34em'}} py={{base: 10,md:12, lg:14}} marginTop={'0 !important'} spacing={{base: 0,md: 0,lg: 8}}>
             <LatestPost/>
-            <Stack direction={{base: 'column',md:'row', lg: 'column'}} display={{base: 'flex',md: 'none',lg: 'flex', xl: 'flex'}} justifyContent={'center'} width={'100%'} py={10} spacing={{base: 10, lg:0}}>
+            <Stack direction={{base: 'column',md:'row', lg: 'column'}} display={{base: 'flex',md: 'none',lg: 'flex', xl: 'flex'}} justifyContent={'center'} width={'100%'} py={{ base: 6,md:10}} spacing={{base: 10, lg:0}}>
               <Stack direction={{base: 'column',md:'row'}} justifyContent={'space-between'}>
               <CardsGroup/>
               </Stack>
@@ -42,7 +42,7 @@ export default function Home() {
             </Stack>
             
 
-            <Stack direction={'column'} display={{base: 'none',md: 'flex',lg: 'none'}} justifyContent={'center'} width={'100%'} py={10} spacing={10}>
+            <Stack direction={'column'} display={{base: 'none',md: 'flex',lg: 'none'}} justifyContent={'center'} width={'100%'} py={10} spacing={4}>
               <Stack direction={'row'} spacing={6}>
               <Cards/>
               <Cards/>

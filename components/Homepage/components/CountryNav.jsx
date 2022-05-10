@@ -12,7 +12,7 @@ const CountryNav = () => {
     justifyContent={'flex-start'}
     backgroundColor={"#E0E5E8"}
     marginTop={"0px !important"}
-    px={{base: 8, '2xl': '20em'}}
+    px={{base: 5, lg:5 ,xl: 8, '2xl': '30em'}}
     fontFamily={'Inter'}
     display={{base: 'none',md: 'none', lg: 'flex', xl:'flex'}}
     boxShadow={'0px 4px 5px rgba(107, 114, 128, 0.25)'}

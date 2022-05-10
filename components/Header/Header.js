@@ -18,7 +18,7 @@ const Header = () => {
       width={"100%"}
       backgroundColor={"#CE1126"}
       marginTop={"0px !important"}
-      px={{ lg: 4, xl: 8, '2xl': '20em' }}
+      px={{ lg: 4, xl: 8, '2xl': '30em' }}
       fontFamily={"Inter"}
       justifyContent={"space-between"}
       display={{ base: "none", md: "none", lg: "flex", xl: "flex" }}

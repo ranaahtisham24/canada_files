@@ -10,7 +10,7 @@ const Banner = () => {
       width={"100%"}
       maxHeight={{md: '184px',lg: '262px', xl: "262px"}}
       bgColor={"#121212"}
-      padding={{md: "0" ,lg: "0", xl: '0 2rem'}}
+      padding={{md: "0" ,lg: "0", xl: '0 2rem', '2xl': '0 20em'}}
       justifyContent={'center'}
       alignItems={'center'}
       marginTop={'0px !important'}

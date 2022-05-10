@@ -35,7 +35,7 @@ const EditorNote = () => {
         Please consider setting up a monthly or annual donation through
         Donorbox.
       </Text>
-      <Button boxShadow={' 1px 3px 6px rgba(133, 146, 163, 0.45)'} borderRadius={'6px'} p={'16px 24px'} backgroundColor={'#CE1126'} color={'#F4F6F7'} width={{base: '100%',md:'max-content'}}>Donate to The Canada Files</Button>
+      <Button boxShadow={' 1px 3px 6px rgba(133, 146, 163, 0.45)'} borderRadius={'6px'} p={'16px 24px'} backgroundColor={'#CE1126'} color={'#F4F6F7'} width={{base: '100%',md:'max-content'}} _hover={{backgroundColor: 'none'}} _active={{backgroundColor: '#A00D1E'}}>Donate to The Canada Files</Button>
     </Stack>
   );
 };

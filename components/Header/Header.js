@@ -1,9 +1,16 @@
 import { Button, Heading, Stack } from "@chakra-ui/react";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, {useState} from "react";
+import DefaultSearchIcon from '../../public/assets/images/DefaultSearchIcon.svg'
+import SearchIconBlack from '../../public/assets/images/SearchIconBlack.svg'
+import GreySearchIcon from '../../public/assets/images/GreySearchIcon.svg'
+import Image from "next/image";
 
 const Header = () => {
+  const [show, setShow] = useState(false)
+  const [pressed, setPressed] = useState(false)
+  console.log("🚀 ~ file: Header.js ~ line 10 ~ Header ~ show", show)
   return (
     <Stack
       height={"64px"}
@@ -11,7 +18,7 @@ const Header = () => {
       width={"100%"}
       backgroundColor={"#CE1126"}
       marginTop={"0px !important"}
-      px={{ lg: 4, xl: 8 }}
+      px={{ lg: 4, xl: 8, '2xl': '20em' }}
       fontFamily={"Inter"}
       justifyContent={"space-between"}
       display={{ base: "none", md: "none", lg: "flex", xl: "flex" }}
@@ -78,12 +85,18 @@ const Header = () => {
         <Stack
           justifyContent={"center"}
           alignItems={"center"}
+          onMouseEnter={()=> setShow(true)}
+          onMouseLeave={()=> setShow(false)}
+          onClick={()=> setPressed(true)}
         >
-          <FontAwesomeIcon
-            fontSize={"24px"}
-            color="white"
-            icon={faMagnifyingGlass}
-          />
+          {pressed ? 
+            <Image objectFit="contain" src={GreySearchIcon}/>:
+            show ? 
+            <Image objectFit="contain" src={SearchIconBlack}/>:
+            <Image objectFit="contain" src={DefaultSearchIcon}/> 
+          }
+          
+          
         </Stack>
         <Stack direction="row" spacing={4} align="center">
           <Button

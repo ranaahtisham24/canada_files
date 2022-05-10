@@ -19,6 +19,9 @@ const FurtherReading = () => {
         lineHeight={"24px"}
         letterSpacing={"-0.011em"}
         color={"#A00D1E"}
+        _hover={{color: '#273848'}}
+        _active={{color: '#6B7280'}}
+        cursor={'pointer'}
       >
         Disinformation 'expert' urges Canadian government to impose sanctions on
         Russia Today employees
@@ -28,6 +31,9 @@ const FurtherReading = () => {
         lineHeight={"24px"}
         letterSpacing={"-0.011em"}
         color={"#A00D1E"}
+        _hover={{color: '#273848'}}
+        _active={{color: '#6B7280'}}
+        cursor={'pointer'}
       >
         Conflict in Ukraine: NATO belligerence and the resulting geopolitical consequences
       </Text>
@@ -36,6 +42,9 @@ const FurtherReading = () => {
         lineHeight={"24px"}
         letterSpacing={"-0.011em"}
         color={"#A00D1E"}
+        _hover={{color: '#273848'}}
+        _active={{color: '#6B7280'}}
+        cursor={'pointer'}
       >
         Canada must end its complicity in Colombia’s grave human rights situation
       </Text>
